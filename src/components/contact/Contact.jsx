@@ -6,12 +6,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 
-const {
-  REACT_APP_SERVICE_ID,
-  REACT_APP_TEMPLATE_ID,
-  REACT_APP_PUBLIC_KEY,
-  REACT_APP_PHONE,
-} = "/etc/secrets/.env";
+const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY, VITE_PHONE } =
+  import.meta.env;
 
 const Contact = () => {
   const form = useRef();
@@ -22,16 +18,16 @@ const Contact = () => {
     e.preventDefault();
 
     await emailjs.sendForm(
-      `${REACT_APP_SERVICE_ID}`,
-      `${REACT_APP_TEMPLATE_ID}`,
+      `${VITE_SERVICE_ID}`,
+      `${VITE_TEMPLATE_ID}`,
       form.current,
-      `${REACT_APP_PUBLIC_KEY}`
+      `${VITE_PUBLIC_KEY}`
     );
     e.target.reset();
     notify();
   };
 
-  // const phone = `https://api.whatsapp.com/send?phone=+${REACT_APP_PHONE}`;
+  // const phone = `https://api.whatsapp.com/send?phone=+${VITE_PHONE}`;
   const phone = "https://api.whatsapp.com/send?phone=+541135590980";
 
   return (
