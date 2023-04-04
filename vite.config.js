@@ -13,4 +13,16 @@ export default defineConfig({
       main: resolve(__dirname, "index.html"),
     },
   },
+  define: {
+    "import.meta.env.VITE_SERVICE_ID": JSON.stringify(
+      process.env.VITE_SERVICE_ID
+    ),
+    "import.meta.env.VITE_TEMPLATE_ID": JSON.stringify(
+      process.env.VITE_TEMPLATE_ID
+    ),
+    "import.meta.env.VITE_PUBLIC_KEY": JSON.stringify(
+      process.env.VITE_PUBLIC_KEY
+    ),
+    "import.meta.env.VITE_PHONE": JSON.stringify(process.env.VITE_PHONE),
+  },
 });

@@ -27,8 +27,8 @@ const Contact = () => {
     notify();
   };
 
-  // const phone = `https://api.whatsapp.com/send?phone=+${VITE_PHONE}`;
-  const phone = "https://api.whatsapp.com/send?phone=+541135590980";
+  const phone = `https://api.whatsapp.com/send?phone=+${VITE_PHONE}`;
+  // const phone = "https://api.whatsapp.com/send?phone=+541135590980";
 
   return (
     <section id="contact">
