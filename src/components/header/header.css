@@ -90,9 +90,6 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
-    height: 117vh;
-  }
   .header__socials {
     margin-left: 1rem;
   }
@@ -102,9 +99,6 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    height: 117vh;
-  }
   .header__socials,
   .scroll__down {
     display: none;
