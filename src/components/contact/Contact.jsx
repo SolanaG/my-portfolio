@@ -18,10 +18,10 @@ const Contact = () => {
 
   const notify = () => toast.success("Successfully send!");
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
+    await emailjs.sendForm(
       `${REACT_APP_SERVICE_ID}`,
       `${REACT_APP_TEMPLATE_ID}`,
       form.current,
@@ -31,7 +31,8 @@ const Contact = () => {
     notify();
   };
 
-  const phone = `https://api.whatsapp.com/send?phone=+${REACT_APP_PHONE}`;
+  // const phone = `https://api.whatsapp.com/send?phone=+${REACT_APP_PHONE}`;
+  const phone = "https://api.whatsapp.com/send?phone=+541135590980";
 
   return (
     <section id="contact">
