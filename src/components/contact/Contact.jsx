@@ -13,18 +13,26 @@ const Contact = () => {
   const form = useRef();
 
   const notify = () => toast.success("Successfully send!");
+  const notifyError = () => toast.error("Email could not be send");
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
-    await emailjs.sendForm(
-      `${VITE_SERVICE_ID}`,
-      `${VITE_TEMPLATE_ID}`,
-      form.current,
-      `${VITE_PUBLIC_KEY}`
-    );
-    e.target.reset();
-    notify();
+    console.log(VITE_PUBLIC_KEY);
+    console.log(VITE_SERVICE_ID);
+    console.log(VITE_TEMPLATE_ID);
+    try {
+      await emailjs.sendForm(
+        `${VITE_SERVICE_ID}`,
+        `${VITE_TEMPLATE_ID}`,
+        form.current,
+        `${VITE_PUBLIC_KEY}`
+        // "9p5WYahS7pYxP_FW2"
+      );
+      e.target.reset();
+      notify();
+    } catch (error) {
+      notifyError();
+    }
   };
 
   const phone = `https://api.whatsapp.com/send?phone=+${VITE_PHONE}`;
