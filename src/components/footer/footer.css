@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+footer {
+  background: var(--color-primary);
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 7rem;
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+
+.footer__copyright {
+  color: var(--color-footer);
+  padding: 0.8rem;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright-icon {
+  margin: 0 3px 1px 3px;
+}
+
+@media screen and (max-width: 288px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 237px) {
+  footer {
+    font-size: 0.6rem;
+  }
+}

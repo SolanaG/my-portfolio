@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  box-sizing: border-box;
+  height: 80px;
+  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 1.1rem;
+  color: var(--color-light);
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  align-items: center !important;
+}
+
+.prueba {
+  align-items: center !important;
+}
+
+.links__icons {
+  margin-right: 0.3rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+nav a.active {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 702px) {
+  .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease all;
+    top: 60px;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  nav a {
+    background-color: var(--color-bg) !important;
+    color: var(--color-primary) !important;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.3rem;
+  }
+
+  nav a:hover {
+    color: var(--color-white) !important;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav-toggle span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+    background-color: var(--color-white);
+  }
+
+  .nav-toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav-toggle.open > span:nth-child(2) {
+    display: none;
+  }
+  .nav-toggle.open > span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, 1px);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  nav {
+    justify-content: flex-start;
+  }
+}

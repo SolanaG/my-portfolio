@@ -1,0 +1,84 @@
+.experience__inner {
+  display: grid;
+  width: 75%;
+  grid-template-columns: 35% 50%;
+  gap: 5%;
+}
+
+.experience__tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+}
+
+.simple-button {
+  background: transparent;
+  color: var(--color-white);
+  margin: 10px 5px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.simple-button:hover {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.active {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.experience__description {
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.experience__description h3 {
+  margin-bottom: 2px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.experience__description-company {
+  color: var(--color-primary);
+}
+
+.experience__description p {
+  font-family: "Lora", serif;
+  font-weight: 100;
+  color: var(--color-light);
+  margin-bottom: 25px !important;
+}
+
+.experience__description ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.experience__description li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 327px) {
+  .experience__description h3,
+  .experience__description-company {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 255px) {
+    .experience__description h3,
+    .experience__description-company {
+      font-size: 0.6rem;
+    }
+  }
+}
