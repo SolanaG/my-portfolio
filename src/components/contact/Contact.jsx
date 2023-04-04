@@ -17,16 +17,15 @@ const Contact = () => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    console.log(VITE_PUBLIC_KEY);
-    console.log(VITE_SERVICE_ID);
-    console.log(VITE_TEMPLATE_ID);
     try {
       await emailjs.sendForm(
-        `${VITE_SERVICE_ID}`,
-        `${VITE_TEMPLATE_ID}`,
+        "service_4huvv0a",
+        //`${VITE_SERVICE_ID}`,
+        "template_u8np553",
+        //`${VITE_TEMPLATE_ID}`,
         form.current,
-        `${VITE_PUBLIC_KEY}`
-        // "9p5WYahS7pYxP_FW2"
+        //`${VITE_PUBLIC_KEY}`
+        "9p5WYahS7pYxP_FW2"
       );
       e.target.reset();
       notify();
