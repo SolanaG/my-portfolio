@@ -11,7 +11,7 @@ const {
   REACT_APP_TEMPLATE_ID,
   REACT_APP_PUBLIC_KEY,
   REACT_APP_PHONE,
-} = import.meta.env;
+} = "/etc/secrets/.env";
 
 const Contact = () => {
   const form = useRef();
