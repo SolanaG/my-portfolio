@@ -15,27 +15,47 @@ const Contact = () => {
   const notify = () => toast.success("Successfully send!");
   const notifyError = () => toast.error("Email could not be send");
 
-  const sendEmail = async (e) => {
+  // const sendEmail = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await emailjs.sendForm(
+  //       "service_4huvv0a",
+  //       //`${VITE_SERVICE_ID}`,
+  //       "template_u8np553",
+  //       //`${VITE_TEMPLATE_ID}`,
+  //       form.current,
+  //       //`${VITE_PUBLIC_KEY}`
+  //       "9p5WYahS7pYxP_FW2"
+  //     );
+  //     e.target.reset();
+  //     notify();
+  //   } catch (error) {
+  //     notifyError();
+  //   }
+  // };
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      await emailjs.sendForm(
+
+    emailjs
+      .sendForm(
         "service_4huvv0a",
-        //`${VITE_SERVICE_ID}`,
         "template_u8np553",
-        //`${VITE_TEMPLATE_ID}`,
         form.current,
-        //`${VITE_PUBLIC_KEY}`
         "9p5WYahS7pYxP_FW2"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          notify();
+        },
+        (error) => {
+          notifyError();
+        }
       );
-      e.target.reset();
-      notify();
-    } catch (error) {
-      notifyError();
-    }
   };
 
   const phone = `https://api.whatsapp.com/send?phone=+${VITE_PHONE}`;
-  // const phone = "https://api.whatsapp.com/send?phone=+541135590980";
 
   return (
     <section id="contact">
