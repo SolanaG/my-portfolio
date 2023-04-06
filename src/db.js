@@ -18,7 +18,7 @@ export const descriptions = [
     pos_description: [
       "Educational Contract",
       "Plan, design, and built an Ecological website, related to garbage recycling.",
-      "Developed with React, Express, Chakra UI.",
+      "Developed with React, Express, Chakra UI, Google Maps, Nodemailer, MP, Passport.js, Cloudinary.",
       "Agile methodologies, team work, proactivity, git flow, creativity.",
     ],
   },
@@ -52,7 +52,7 @@ export const descriptions = [
     date: "Aug 2021 - Sept 2021",
     pos_description: [
       "Educational Project",
-      "Design and develop a website to edit memes.",
+      "Design and develop a responsive website to edit memes.",
       "Team work, problem resolution, adaptability.",
     ],
   },
@@ -73,7 +73,7 @@ export const data = [
     title: "Magic Spoon",
     work: "Personal work",
     github: "https://github.com/SolanaG/Food-PI",
-    demo: "https://github.com/SolanaG/Food-PI",
+    demo: "",
   },
   {
     id: 3,

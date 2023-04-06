@@ -24,14 +24,18 @@ const Work = () => {
                 >
                   Github Repo
                 </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Demo
-                </a>
+                {demo ? (
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo
+                  </a>
+                ) : (
+                  <></>
+                )}
               </div>
             </article>
           );

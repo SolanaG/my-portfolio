@@ -10,7 +10,7 @@
   width: 100%;
   border-radius: 2rem;
   display: grid;
-  place-items: center;
+  place-items: start;
 }
 
 .about__me-image {

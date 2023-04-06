@@ -14,18 +14,33 @@ const About = () => {
         </div>
         <div className="about__content">
           <p>
-            My name is Solana, and I'm a Full Stack Developer with a passion for
-            creating innovative solutions. I have experience in a wide range of
-            technologies, including JavaScript, React Js, Redux, Node JS,
-            Express, Sequelize, HTML, Chakra UI, and CSS.
+            Hello, I'm Solana, a Full Stack Developer with a unique background
+            in yoga teaching. I'm passionate about using technology to create
+            innovative solutions that solve real-world problems. With extensive
+            experience in JavaScript, React Js, Redux, Node JS, Express,
+            Sequelize, HTML, Chakra UI, and CSS.
             <br />
-            I'm a committed, dedicated, and optimistic person. Driven to meet
-            objectives and create projects that can make a real impact. <br />
-            Feeling happiest when i'm learning and doing teamwork. <br />I
-            belive that technology has the power to change the world and, as you
-            know, <i>"with great power comes great responsibility"</i>...
+            But what really sets me apart is my commitment to excellence and my
+            collaborative, team-oriented approach. Whether it's working with
+            clients, colleagues, or students in my yoga classes, I'm always
+            looking for ways to learn, grow, and make a meaningful impact. I
+            thrive on taking on challenging objectives and pushing myself to new
+            heights.
             <br />
-            So let's go for it!
+            Yoga has been an integral part of my life for many years, providing
+            me with valuable skills in empathy, focus, and balance. By
+            cultivating deep concentration through meditation practice, I bring
+            a unique perspective to every project I work on. I believe that a
+            holistic approach to problem-solving can lead to more innovative and
+            effective solutions.
+            <br />
+            Ultimately, I'm driven by the belief that technology can be a
+            powerful force for positive change in the world. However,
+            <i>"with great power comes great responsibility"</i>. That's why I'm
+            dedicated to use my skills to create projects that make a real
+            difference in people's lives. If you're looking for a Full Stack
+            Developer who shares your values and your vision for a better world,
+            let's connect and make it happen.
           </p>
         </div>
       </div>

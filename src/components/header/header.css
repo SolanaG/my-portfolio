@@ -12,16 +12,29 @@ header {
   position: relative;
 }
 
+.header__container h1 {
+  font-size: 3.6rem;
+  margin: -10px;
+}
+
+.header__container h5 {
+  margin-top: 12px;
+}
+
 .text-ligth {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 2.6rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+}
+
+.btn-primary.talk {
+  width: 149.28px;
 }
 
 .header__socials {
@@ -97,15 +110,34 @@ header {
     margin-right: 1rem;
   }
 }
-
 @media screen and (max-width: 600px) {
   .header__socials,
   .scroll__down {
     display: none;
   }
+  .header__container h1 {
+    font-size: 3.3rem;
+  }
 }
-
+@media screen and (max-width: 416px) {
+  .header__container h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 367px) {
+  .header__container h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 341px) {
+  .header__container h1 {
+    font-size: 2.6rem;
+  }
+}
 @media screen and (max-width: 327px) {
+  .header__container h1 {
+    font-size: 2.5rem;
+  }
   .me > img {
     width: 80%;
     margin: 0 auto;
